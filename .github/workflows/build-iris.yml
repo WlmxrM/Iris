@@ -18,7 +18,7 @@ jobs:
 
       - name: Fijar version de VolmLib
         run: |
-          grep -rl 'master-SNAPSHOT' --include='*.gradle' --include='*.kts' --include='*.properties' --include='*.toml' . | xargs sed -i 's/master-SNAPSHOT/b5e5254fed/g'
+          grep -rl 'master-SNAPSHOT' --include='*.gradle' --include='*.kts' --include='*.properties' --include='*.toml' . | xargs sed -i 's/master-SNAPSHOT/master-b5e5254fed-1/g'
 
       - name: Build
         run: |
